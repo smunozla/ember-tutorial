@@ -1,0 +1,29 @@
+{{page-title "Ember Tutorial"}}
+<div class="flex flex-col min-h-screen">
+    <div class="flex flex-grow border-t-1 border-gray-300">
+        <aside class="flex flex-col w-1/4 p-4 shadow border-r-2 border-gray-300 bg-white">
+        <h2 class="mb-2 text-xl font-bold text-sky-950">Entry Level Exercises</h2>
+                <LinkTo @route="entry-level-exercises.ex-01.instructions">Exercise 1
+                </LinkTo>
+                <LinkTo @route="entry-level-exercises.ex-02.instructions">Exercise 2
+                </LinkTo>
+                <LinkTo @route="entry-level-exercises.ex-03.instructions">Exercise 3
+                </LinkTo>
+                <LinkTo @route="entry-level-exercises.ex-04.instructions">Exercise 4
+                </LinkTo>
+                <LinkTo @route="entry-level-exercises.ex-05.instructions">Exercise 5
+                </LinkTo>
+                <LinkTo @route="entry-level-exercises.ex-06.instructions">Exercise 6
+                </LinkTo>
+                <LinkTo @route="entry-level-exercises.ex-07.instructions">Exercise 7
+                </LinkTo>
+                <LinkTo @route="entry-level-exercises.ex-08.instructions">Exercise 8
+                </LinkTo>
+                <LinkTo @route="entry-level-exercises.ex-09.instructions">Exercise 9
+                </LinkTo>
+        </aside>
+        <main class="w-3/4 p-4 bg-sky-50">
+            {{outlet}}
+        </main>
+    </div>
+</div>

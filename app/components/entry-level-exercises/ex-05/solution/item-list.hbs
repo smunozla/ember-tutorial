@@ -1,0 +1,11 @@
+{{! BEGIN-SNIPPET item-list}}
+<p>Total items: {{this.items.length}}</p>
+
+<ul>
+    {{#each this.items as |item index|}}
+    <li class="{{if item.surname 'text-blue-500' ''}}">
+        {{item.name}} (Position: {{index}})
+    </li>
+    {{/each}}
+</ul>
+{{! END-SNIPPET item-list}}

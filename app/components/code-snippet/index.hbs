@@ -1,0 +1,4 @@
+{{#let (get-code-snippet @name) as |snippet|}}
+<h2 class="mb-2 mt-4 text-xl font-semibold">{{@name}}</h2>
+<CodeBlock @code={{snippet.source}} @language={{snippet.language}} />
+{{/let}}

@@ -1,0 +1,13 @@
+{{! BEGIN-SNIPPET input-list-delete}}
+<input type="text" {{on "input" (fn this.addItem value="target" )}} placeholder="Add item" />
+
+<ul>
+    {{#each this.items as |item|}}
+    <li>{{item}}</li>
+    {{/each}}
+</ul>
+
+<input type="text" {{on "input" (fn this.updateValueToDelete value="target" )}} placeholder="Enter item to delete" />
+
+<button {{on "click" (fn this.deleteItem this.valueToDelete)}}>Delete Item</button>
+{{! END-SNIPPET}}

@@ -1,0 +1,9 @@
+{{! BEGIN-SNIPPET input-list}}
+<input type="text" {{on "input" (fn this.addItem value="target" )}} placeholder="Add item" />
+
+<ul>
+    {{#each this.items as |item|}}
+    <li>{{item}}</li>
+    {{/each}}
+</ul>
+{{! END-SNIPPET}}
